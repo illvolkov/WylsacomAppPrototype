@@ -7,20 +7,34 @@
 
 import SwiftUI
 
-struct TabViewContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+struct TabViewContent: View {
+    
+    @State private var selection = 0
+    
+    private func changeSelectedImage(selection: Int, defaultImage: Image, selectedImage: Image) -> Image {
+        if self.selection == selection {
+            return selectedImage.renderingMode(.original)
+        } else {
+            return defaultImage.renderingMode(.original)
         }
-        .padding()
+    }
+        
+    var body: some View {
+        TabView(selection: $selection) {
+            Text("TapeModule")
+                .tabItem {
+                    Text("Лента")
+                    changeSelectedImage(selection: 0,
+                                        defaultImage: Image("tape"),
+                                        selectedImage: Image("tapeSelected"))
+                }.tag(0)
+        }
+        .accentColor(.green)
     }
 }
 
 struct TabViewContent_Previews: PreviewProvider {
     static var previews: some View {
-        TabViewContentView()
+        TabViewContent()
     }
 }

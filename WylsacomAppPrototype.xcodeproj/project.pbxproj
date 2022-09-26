@@ -68,6 +68,9 @@
 		045750DC28E1F8E500751473 /* TapeModule */ = {
 			isa = PBXGroup;
 			children = (
+				045750E328E1FA0700751473 /* Model */,
+				045750E228E1FA0300751473 /* ViewModel */,
+				045750E128E1F9FF00751473 /* View */,
 			);
 			path = TapeModule;
 			sourceTree = "<group>";
@@ -75,8 +78,8 @@
 		045750DD28E1F8F400751473 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				045750DF28E1F90200751473 /* TabViewContent */,
 				045750DE28E1F8F900751473 /* App */,
+				045750DF28E1F90200751473 /* TabViewContent */,
 				045750DC28E1F8E500751473 /* TapeModule */,
 			);
 			path = Sources;
@@ -105,6 +108,27 @@
 				045750D428E1F5F400751473 /* Preview Content */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		045750E128E1F9FF00751473 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045750E228E1FA0300751473 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		045750E328E1FA0700751473 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,7 +330,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WylsacomAppPrototype/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WylsacomAppPrototype/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 34TG2Y4HBL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -335,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WylsacomAppPrototype/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WylsacomAppPrototype/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 34TG2Y4HBL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
