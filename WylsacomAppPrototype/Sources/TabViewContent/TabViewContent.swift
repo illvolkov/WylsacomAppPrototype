@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct TabViewContent: View {
-    
+        
     @State private var selection = 0
+    
+    init() {
+        UITabBar.appearance().backgroundColor = .white
+    }
     
     private func changeSelectedImage(selection: Int, defaultImage: Image, selectedImage: Image) -> Image {
         if self.selection == selection {
@@ -21,7 +25,7 @@ struct TabViewContent: View {
         
     var body: some View {
         TabView(selection: $selection) {
-            Text("TapeModule")
+            TapeView()
                 .tabItem {
                     Text("Лента")
                     changeSelectedImage(selection: 0,
