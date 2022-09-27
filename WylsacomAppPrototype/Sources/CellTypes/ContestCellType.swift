@@ -46,6 +46,6 @@ struct ContestCellType: View {
 
 struct ContestCellType_Previews: PreviewProvider {
     static var previews: some View {
-        ContestCellType(cell: Cell(image: "hydrogen", title: "iPhone 13 Pro Max среди пользователей тарифа", subTitle: "Завершен", date: nil))
+        ContestCellType(cell: Cell(image: "13promax", title: "iPhone 13 Pro Max среди пользователей тарифа", subTitle: "Завершен", date: nil))
     }
 }

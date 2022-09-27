@@ -39,6 +39,13 @@ struct TabViewContent: View {
                                         defaultImage: Image("contest"),
                                         selectedImage: Image("contestSelected"))
                 }.tag(1)
+            VideoView()
+                .tabItem {
+                    Text("Видео")
+                    changeSelectedImage(selection: 2,
+                                        defaultImage: Image("video"),
+                                        selectedImage: Image("videoSelected"))
+                }.tag(2)
         }
         .accentColor(.green)
     }

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		04060D0628E2B63000FA9684 /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D0528E2B63000FA9684 /* View + Extension.swift */; };
+		04060D0C28E2B8EC00FA9684 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D0B28E2B8EC00FA9684 /* VideoView.swift */; };
+		04060D0E28E2B8FA00FA9684 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D0D28E2B8FA00FA9684 /* VideoViewModel.swift */; };
+		04060D1028E2B90600FA9684 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D0F28E2B90500FA9684 /* VideoModel.swift */; };
 		045750CF28E1F5F200751473 /* WylsacomAppPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045750CE28E1F5F200751473 /* WylsacomAppPrototypeApp.swift */; };
 		045750D128E1F5F200751473 /* TabViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045750D028E1F5F200751473 /* TabViewContent.swift */; };
 		045750D328E1F5F400751473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045750D228E1F5F400751473 /* Assets.xcassets */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		04060D0528E2B63000FA9684 /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
+		04060D0B28E2B8EC00FA9684 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		04060D0D28E2B8FA00FA9684 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		04060D0F28E2B90500FA9684 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		045750CB28E1F5F200751473 /* WylsacomAppPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WylsacomAppPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045750CE28E1F5F200751473 /* WylsacomAppPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WylsacomAppPrototypeApp.swift; sourceTree = "<group>"; };
 		045750D028E1F5F200751473 /* TabViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewContent.swift; sourceTree = "<group>"; };
@@ -68,6 +74,40 @@
 				04060D0528E2B63000FA9684 /* View + Extension.swift */,
 			);
 			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		04060D0728E2B8C500FA9684 /* VideoModule */ = {
+			isa = PBXGroup;
+			children = (
+				04060D0A28E2B8DD00FA9684 /* Model */,
+				04060D0928E2B8D700FA9684 /* ViewModel */,
+				04060D0828E2B8D300FA9684 /* View */,
+			);
+			path = VideoModule;
+			sourceTree = "<group>";
+		};
+		04060D0828E2B8D300FA9684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04060D0B28E2B8EC00FA9684 /* VideoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04060D0928E2B8D700FA9684 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04060D0D28E2B8FA00FA9684 /* VideoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04060D0A28E2B8DD00FA9684 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04060D0F28E2B90500FA9684 /* VideoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		045750C228E1F5F200751473 = {
@@ -124,6 +164,7 @@
 				0480C41728E25B2500D164D4 /* ModelTemplate */,
 				045750DC28E1F8E500751473 /* TapeModule */,
 				04CBD3D628E286C900F85077 /* ContestModule */,
+				04060D0728E2B8C500FA9684 /* VideoModule */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -314,9 +355,12 @@
 				0480C40A28E2420700D164D4 /* Section.swift in Sources */,
 				0480C40828E23CCA00D164D4 /* Cell.swift in Sources */,
 				04CBD3E328E288FA00F85077 /* ContestCellType.swift in Sources */,
+				04060D1028E2B90600FA9684 /* VideoModel.swift in Sources */,
 				0480C40F28E24BEA00D164D4 /* NavigationView.swift in Sources */,
 				0480C41928E25D1600D164D4 /* VideoCellType.swift in Sources */,
 				0480C40628E23BE500D164D4 /* TapeViewModel.swift in Sources */,
+				04060D0C28E2B8EC00FA9684 /* VideoView.swift in Sources */,
+				04060D0E28E2B8FA00FA9684 /* VideoViewModel.swift in Sources */,
 				0480C41628E25ADA00D164D4 /* TapeModel.swift in Sources */,
 				0480C40C28E2422800D164D4 /* SectionType.swift in Sources */,
 				045750D128E1F5F200751473 /* TabViewContent.swift in Sources */,
