@@ -46,7 +46,7 @@ struct VideoCellType: View {
                     Image(cell.subImage)
                         .resizable()
                         .frame(width: viewWidth * 0.04, height: viewWidth * 0.04)
-                    Text(cell.date)
+                    Text(cell.date ?? "")
                         .font(.system(size: viewWidth * 0.03))
                         .opacity(0.8)
                 }

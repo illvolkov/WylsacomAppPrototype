@@ -13,12 +13,5 @@ struct Cell: Identifiable {
     let subImage = "wylsa"
     let title: String
     let subTitle: String
-    let date: String
-    
-    init(image: String, title: String, subTitle: String, date: String) {
-        self.image = image
-        self.title = title
-        self.subTitle = subTitle
-        self.date = date
-    }
+    let date: String?
 }

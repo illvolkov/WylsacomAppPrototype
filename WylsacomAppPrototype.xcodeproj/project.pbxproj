@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04060D0628E2B63000FA9684 /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D0528E2B63000FA9684 /* View + Extension.swift */; };
 		045750CF28E1F5F200751473 /* WylsacomAppPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045750CE28E1F5F200751473 /* WylsacomAppPrototypeApp.swift */; };
 		045750D128E1F5F200751473 /* TabViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045750D028E1F5F200751473 /* TabViewContent.swift */; };
 		045750D328E1F5F400751473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045750D228E1F5F400751473 /* Assets.xcassets */; };
@@ -21,9 +22,14 @@
 		0480C41428E25A5D00D164D4 /* TapeCellTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C41328E25A5D00D164D4 /* TapeCellTypes.swift */; };
 		0480C41628E25ADA00D164D4 /* TapeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C41528E25ADA00D164D4 /* TapeModel.swift */; };
 		0480C41928E25D1600D164D4 /* VideoCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C41828E25D1600D164D4 /* VideoCellType.swift */; };
+		04CBD3DB28E2870D00F85077 /* ContestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CBD3DA28E2870D00F85077 /* ContestView.swift */; };
+		04CBD3DD28E2872100F85077 /* ContestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CBD3DC28E2872100F85077 /* ContestViewModel.swift */; };
+		04CBD3DF28E2872E00F85077 /* ContestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CBD3DE28E2872E00F85077 /* ContestModel.swift */; };
+		04CBD3E328E288FA00F85077 /* ContestCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CBD3E228E288FA00F85077 /* ContestCellType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04060D0528E2B63000FA9684 /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
 		045750CB28E1F5F200751473 /* WylsacomAppPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WylsacomAppPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045750CE28E1F5F200751473 /* WylsacomAppPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WylsacomAppPrototypeApp.swift; sourceTree = "<group>"; };
 		045750D028E1F5F200751473 /* TabViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewContent.swift; sourceTree = "<group>"; };
@@ -39,6 +45,10 @@
 		0480C41328E25A5D00D164D4 /* TapeCellTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeCellTypes.swift; sourceTree = "<group>"; };
 		0480C41528E25ADA00D164D4 /* TapeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeModel.swift; sourceTree = "<group>"; };
 		0480C41828E25D1600D164D4 /* VideoCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCellType.swift; sourceTree = "<group>"; };
+		04CBD3DA28E2870D00F85077 /* ContestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestView.swift; sourceTree = "<group>"; };
+		04CBD3DC28E2872100F85077 /* ContestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestViewModel.swift; sourceTree = "<group>"; };
+		04CBD3DE28E2872E00F85077 /* ContestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestModel.swift; sourceTree = "<group>"; };
+		04CBD3E228E288FA00F85077 /* ContestCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestCellType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04060D0428E2B60A00FA9684 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				04060D0528E2B63000FA9684 /* View + Extension.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
 		045750C228E1F5F200751473 = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +116,14 @@
 		045750DD28E1F8F400751473 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				04060D0428E2B60A00FA9684 /* Extenstions */,
 				045750DE28E1F8F900751473 /* App */,
 				0480C40D28E24B9400D164D4 /* NavigationView */,
 				045750DF28E1F90200751473 /* TabViewContent */,
 				0480C41028E24EDA00D164D4 /* CellTypes */,
 				0480C41728E25B2500D164D4 /* ModelTemplate */,
 				045750DC28E1F8E500751473 /* TapeModule */,
+				04CBD3D628E286C900F85077 /* ContestModule */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -172,6 +192,7 @@
 			children = (
 				0480C41128E24F9E00D164D4 /* NewsCellType.swift */,
 				0480C41828E25D1600D164D4 /* VideoCellType.swift */,
+				04CBD3E228E288FA00F85077 /* ContestCellType.swift */,
 			);
 			path = CellTypes;
 			sourceTree = "<group>";
@@ -184,6 +205,40 @@
 				0480C40728E23CCA00D164D4 /* Cell.swift */,
 			);
 			path = ModelTemplate;
+			sourceTree = "<group>";
+		};
+		04CBD3D628E286C900F85077 /* ContestModule */ = {
+			isa = PBXGroup;
+			children = (
+				04CBD3D928E286FF00F85077 /* Model */,
+				04CBD3D828E286FA00F85077 /* ViewModel */,
+				04CBD3D728E286F100F85077 /* View */,
+			);
+			path = ContestModule;
+			sourceTree = "<group>";
+		};
+		04CBD3D728E286F100F85077 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04CBD3DA28E2870D00F85077 /* ContestView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04CBD3D828E286FA00F85077 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04CBD3DC28E2872100F85077 /* ContestViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04CBD3D928E286FF00F85077 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04CBD3DE28E2872E00F85077 /* ContestModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,15 +313,20 @@
 			files = (
 				0480C40A28E2420700D164D4 /* Section.swift in Sources */,
 				0480C40828E23CCA00D164D4 /* Cell.swift in Sources */,
+				04CBD3E328E288FA00F85077 /* ContestCellType.swift in Sources */,
 				0480C40F28E24BEA00D164D4 /* NavigationView.swift in Sources */,
 				0480C41928E25D1600D164D4 /* VideoCellType.swift in Sources */,
 				0480C40628E23BE500D164D4 /* TapeViewModel.swift in Sources */,
 				0480C41628E25ADA00D164D4 /* TapeModel.swift in Sources */,
 				0480C40C28E2422800D164D4 /* SectionType.swift in Sources */,
 				045750D128E1F5F200751473 /* TabViewContent.swift in Sources */,
+				04CBD3DF28E2872E00F85077 /* ContestModel.swift in Sources */,
 				0480C41228E24F9E00D164D4 /* NewsCellType.swift in Sources */,
 				0480C41428E25A5D00D164D4 /* TapeCellTypes.swift in Sources */,
 				045750CF28E1F5F200751473 /* WylsacomAppPrototypeApp.swift in Sources */,
+				04CBD3DD28E2872100F85077 /* ContestViewModel.swift in Sources */,
+				04060D0628E2B63000FA9684 /* View + Extension.swift in Sources */,
+				04CBD3DB28E2870D00F85077 /* ContestView.swift in Sources */,
 				0480C3FE28E2050C00D164D4 /* TapeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

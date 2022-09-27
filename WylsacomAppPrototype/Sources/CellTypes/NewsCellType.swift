@@ -20,7 +20,7 @@ struct NewsCellType: View {
             LinearGradient(colors: [.clear, .black], startPoint: .top, endPoint: .bottom)
                 .opacity(0.5)
             VStack(alignment: .leading) {
-                Text(cell.date)
+                Text(cell.date ?? "")
                     .foregroundColor(.white)
                     .font(.system(size: viewWidth * 0.027))
                     .fontWeight(.semibold)

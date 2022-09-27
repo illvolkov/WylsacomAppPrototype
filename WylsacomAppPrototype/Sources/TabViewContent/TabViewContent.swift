@@ -32,6 +32,13 @@ struct TabViewContent: View {
                                         defaultImage: Image("tape"),
                                         selectedImage: Image("tapeSelected"))
                 }.tag(0)
+            ContestView()
+                .tabItem {
+                    Text("Конкурсы")
+                    changeSelectedImage(selection: 1,
+                                        defaultImage: Image("contest"),
+                                        selectedImage: Image("contestSelected"))
+                }.tag(1)
         }
         .accentColor(.green)
     }
