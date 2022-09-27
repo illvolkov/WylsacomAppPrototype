@@ -11,6 +11,16 @@
 		045750D128E1F5F200751473 /* TabViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045750D028E1F5F200751473 /* TabViewContent.swift */; };
 		045750D328E1F5F400751473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045750D228E1F5F400751473 /* Assets.xcassets */; };
 		045750D628E1F5F400751473 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045750D528E1F5F400751473 /* Preview Assets.xcassets */; };
+		0480C3FE28E2050C00D164D4 /* TapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C3FD28E2050C00D164D4 /* TapeView.swift */; };
+		0480C40628E23BE500D164D4 /* TapeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C40528E23BE500D164D4 /* TapeViewModel.swift */; };
+		0480C40828E23CCA00D164D4 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C40728E23CCA00D164D4 /* Cell.swift */; };
+		0480C40A28E2420700D164D4 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C40928E2420700D164D4 /* Section.swift */; };
+		0480C40C28E2422800D164D4 /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C40B28E2422800D164D4 /* SectionType.swift */; };
+		0480C40F28E24BEA00D164D4 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C40E28E24BEA00D164D4 /* NavigationView.swift */; };
+		0480C41228E24F9E00D164D4 /* NewsCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C41128E24F9E00D164D4 /* NewsCellType.swift */; };
+		0480C41428E25A5D00D164D4 /* TapeCellTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C41328E25A5D00D164D4 /* TapeCellTypes.swift */; };
+		0480C41628E25ADA00D164D4 /* TapeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C41528E25ADA00D164D4 /* TapeModel.swift */; };
+		0480C41928E25D1600D164D4 /* VideoCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480C41828E25D1600D164D4 /* VideoCellType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		045750D028E1F5F200751473 /* TabViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewContent.swift; sourceTree = "<group>"; };
 		045750D228E1F5F400751473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045750D528E1F5F400751473 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0480C3FD28E2050C00D164D4 /* TapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeView.swift; sourceTree = "<group>"; };
+		0480C40528E23BE500D164D4 /* TapeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeViewModel.swift; sourceTree = "<group>"; };
+		0480C40728E23CCA00D164D4 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		0480C40928E2420700D164D4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		0480C40B28E2422800D164D4 /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
+		0480C40E28E24BEA00D164D4 /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationView.swift; path = WylsacomAppPrototype/Sources/NavigationView/NavigationView.swift; sourceTree = SOURCE_ROOT; };
+		0480C41128E24F9E00D164D4 /* NewsCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCellType.swift; sourceTree = "<group>"; };
+		0480C41328E25A5D00D164D4 /* TapeCellTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeCellTypes.swift; sourceTree = "<group>"; };
+		0480C41528E25ADA00D164D4 /* TapeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeModel.swift; sourceTree = "<group>"; };
+		0480C41828E25D1600D164D4 /* VideoCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCellType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				045750DE28E1F8F900751473 /* App */,
+				0480C40D28E24B9400D164D4 /* NavigationView */,
 				045750DF28E1F90200751473 /* TabViewContent */,
+				0480C41028E24EDA00D164D4 /* CellTypes */,
+				0480C41728E25B2500D164D4 /* ModelTemplate */,
 				045750DC28E1F8E500751473 /* TapeModule */,
 			);
 			path = Sources;
@@ -113,6 +136,8 @@
 		045750E128E1F9FF00751473 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0480C3FD28E2050C00D164D4 /* TapeView.swift */,
+				0480C41328E25A5D00D164D4 /* TapeCellTypes.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +145,7 @@
 		045750E228E1FA0300751473 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0480C40528E23BE500D164D4 /* TapeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,8 +153,37 @@
 		045750E328E1FA0700751473 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0480C41528E25ADA00D164D4 /* TapeModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0480C40D28E24B9400D164D4 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				0480C40E28E24BEA00D164D4 /* NavigationView.swift */,
+			);
+			name = NavigationView;
+			path = App/NavigationView;
+			sourceTree = "<group>";
+		};
+		0480C41028E24EDA00D164D4 /* CellTypes */ = {
+			isa = PBXGroup;
+			children = (
+				0480C41128E24F9E00D164D4 /* NewsCellType.swift */,
+				0480C41828E25D1600D164D4 /* VideoCellType.swift */,
+			);
+			path = CellTypes;
+			sourceTree = "<group>";
+		};
+		0480C41728E25B2500D164D4 /* ModelTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				0480C40B28E2422800D164D4 /* SectionType.swift */,
+				0480C40928E2420700D164D4 /* Section.swift */,
+				0480C40728E23CCA00D164D4 /* Cell.swift */,
+			);
+			path = ModelTemplate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +256,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0480C40A28E2420700D164D4 /* Section.swift in Sources */,
+				0480C40828E23CCA00D164D4 /* Cell.swift in Sources */,
+				0480C40F28E24BEA00D164D4 /* NavigationView.swift in Sources */,
+				0480C41928E25D1600D164D4 /* VideoCellType.swift in Sources */,
+				0480C40628E23BE500D164D4 /* TapeViewModel.swift in Sources */,
+				0480C41628E25ADA00D164D4 /* TapeModel.swift in Sources */,
+				0480C40C28E2422800D164D4 /* SectionType.swift in Sources */,
 				045750D128E1F5F200751473 /* TabViewContent.swift in Sources */,
+				0480C41228E24F9E00D164D4 /* NewsCellType.swift in Sources */,
+				0480C41428E25A5D00D164D4 /* TapeCellTypes.swift in Sources */,
 				045750CF28E1F5F200751473 /* WylsacomAppPrototypeApp.swift in Sources */,
+				0480C3FE28E2050C00D164D4 /* TapeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +404,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,6 +434,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
