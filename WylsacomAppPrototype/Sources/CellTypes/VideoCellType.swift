@@ -9,7 +9,7 @@ import SwiftUI
 
 struct VideoCellType: View {
     
-    let section: Section
+    var section: Section?
     let cell: Cell
     private let viewWidth = UIScreen.main.bounds.width
     
@@ -19,20 +19,11 @@ struct VideoCellType: View {
                 Image(cell.image)
                     .resizable()
                     .frame(height: viewWidth * 0.53)
-                Button {} label: {
-                    ZStack {
-                        Circle()
-                            .foregroundColor(.white)
-                            .frame(width: viewWidth * 0.13, height: viewWidth * 0.13)
-                        Image(systemName: "play.fill")
-                            .foregroundColor(.black)
-                    }
-                    .padding([.leading, .bottom], 5)
-                }
-
+                    .cornerRadius(10, corners: [.topLeft, .topRight])
+                PlayButton()
             }
             VStack(alignment: .leading) {
-                Text(cell.subTitle)
+                Text(cell.subTitle.uppercased())
                     .font(.system(size: viewWidth * 0.03))
                     .opacity(0.6)
                     .padding(.top, 15)
@@ -46,16 +37,27 @@ struct VideoCellType: View {
                     Image(cell.subImage)
                         .resizable()
                         .frame(width: viewWidth * 0.04, height: viewWidth * 0.04)
-                    Text(cell.date)
+                    Text(cell.date ?? "")
                         .font(.system(size: viewWidth * 0.03))
                         .opacity(0.8)
                 }
             }
+            .padding([.leading, .trailing], 40)
+            .frame(width: viewWidth, alignment: .leading)
             Spacer()
         }
-        .cornerRadius(15)
         .padding([.leading, .trailing], 20)
         .frame(width: viewWidth, height: viewWidth * 0.95)
+        .background(
+            Rectangle()
+                .fill(.white)
+                .cornerRadius(10)
+                .padding([.leading, .trailing], 20)
+                .shadow(color: .init(uiColor: UIColor.systemGray6),
+                        radius: 15,
+                        x: 0,
+                        y: 15)
+        )
     }
 }
 

@@ -20,7 +20,7 @@ struct NewsCellType: View {
             LinearGradient(colors: [.clear, .black], startPoint: .top, endPoint: .bottom)
                 .opacity(0.5)
             VStack(alignment: .leading) {
-                Text(cell.date)
+                Text(cell.date ?? "")
                     .foregroundColor(.white)
                     .font(.system(size: viewWidth * 0.027))
                     .fontWeight(.semibold)
@@ -43,6 +43,10 @@ struct NewsCellType: View {
         .cornerRadius(15)
         .padding([.leading, .trailing], 20)
         .frame(width: viewWidth, height: viewWidth)
+        .shadow(color: .init(uiColor: UIColor.systemGray6),
+                radius: 15,
+                x: 0,
+                y: 15)
     }
 }
 
