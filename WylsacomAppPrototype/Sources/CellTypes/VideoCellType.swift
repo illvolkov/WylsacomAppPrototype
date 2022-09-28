@@ -20,17 +20,7 @@ struct VideoCellType: View {
                     .resizable()
                     .frame(height: viewWidth * 0.53)
                     .cornerRadius(10, corners: [.topLeft, .topRight])
-                Button {} label: {
-                    ZStack {
-                        Circle()
-                            .foregroundColor(.white)
-                            .frame(width: viewWidth * 0.13, height: viewWidth * 0.13)
-                        Image(systemName: "play.fill")
-                            .foregroundColor(.black)
-                    }
-                    .padding([.leading, .bottom], 5)
-                }
-
+                PlayButton()
             }
             VStack(alignment: .leading) {
                 Text(cell.subTitle.uppercased())

@@ -15,6 +15,11 @@
 		04060D1828E3184C00FA9684 /* CollaborationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D1728E3184C00FA9684 /* CollaborationViewModel.swift */; };
 		04060D1A28E3186000FA9684 /* CollaborationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D1928E3186000FA9684 /* CollaborationModel.swift */; };
 		04060D1C28E3223C00FA9684 /* CollaborationCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D1B28E3223C00FA9684 /* CollaborationCellType.swift */; };
+		04060D2228E497FA00FA9684 /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D2128E497FA00FA9684 /* PodcastView.swift */; };
+		04060D2428E4980900FA9684 /* PodcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D2328E4980900FA9684 /* PodcastViewModel.swift */; };
+		04060D2628E4981D00FA9684 /* PodcastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D2528E4981D00FA9684 /* PodcastModel.swift */; };
+		04060D2928E498BA00FA9684 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D2828E498BA00FA9684 /* PlayButton.swift */; };
+		04060D2B28E49FB900FA9684 /* PodcastCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D2A28E49FB900FA9684 /* PodcastCellType.swift */; };
 		045750CF28E1F5F200751473 /* WylsacomAppPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045750CE28E1F5F200751473 /* WylsacomAppPrototypeApp.swift */; };
 		045750D128E1F5F200751473 /* TabViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045750D028E1F5F200751473 /* TabViewContent.swift */; };
 		045750D328E1F5F400751473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045750D228E1F5F400751473 /* Assets.xcassets */; };
@@ -44,6 +49,11 @@
 		04060D1728E3184C00FA9684 /* CollaborationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborationViewModel.swift; sourceTree = "<group>"; };
 		04060D1928E3186000FA9684 /* CollaborationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborationModel.swift; sourceTree = "<group>"; };
 		04060D1B28E3223C00FA9684 /* CollaborationCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborationCellType.swift; sourceTree = "<group>"; };
+		04060D2128E497FA00FA9684 /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
+		04060D2328E4980900FA9684 /* PodcastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewModel.swift; sourceTree = "<group>"; };
+		04060D2528E4981D00FA9684 /* PodcastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastModel.swift; sourceTree = "<group>"; };
+		04060D2828E498BA00FA9684 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		04060D2A28E49FB900FA9684 /* PodcastCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCellType.swift; sourceTree = "<group>"; };
 		045750CB28E1F5F200751473 /* WylsacomAppPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WylsacomAppPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045750CE28E1F5F200751473 /* WylsacomAppPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WylsacomAppPrototypeApp.swift; sourceTree = "<group>"; };
 		045750D028E1F5F200751473 /* TabViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewContent.swift; sourceTree = "<group>"; };
@@ -152,6 +162,48 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		04060D1D28E497C900FA9684 /* PodcastModule */ = {
+			isa = PBXGroup;
+			children = (
+				04060D2028E497E200FA9684 /* Model */,
+				04060D1F28E497DA00FA9684 /* ViewModel */,
+				04060D1E28E497D600FA9684 /* View */,
+			);
+			path = PodcastModule;
+			sourceTree = "<group>";
+		};
+		04060D1E28E497D600FA9684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04060D2128E497FA00FA9684 /* PodcastView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04060D1F28E497DA00FA9684 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04060D2328E4980900FA9684 /* PodcastViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04060D2028E497E200FA9684 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04060D2528E4981D00FA9684 /* PodcastModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04060D2728E498A800FA9684 /* PlayButton */ = {
+			isa = PBXGroup;
+			children = (
+				04060D2828E498BA00FA9684 /* PlayButton.swift */,
+			);
+			path = PlayButton;
+			sourceTree = "<group>";
+		};
 		045750C228E1F5F200751473 = {
 			isa = PBXGroup;
 			children = (
@@ -202,12 +254,14 @@
 				045750DE28E1F8F900751473 /* App */,
 				0480C40D28E24B9400D164D4 /* NavigationView */,
 				045750DF28E1F90200751473 /* TabViewContent */,
+				04060D2728E498A800FA9684 /* PlayButton */,
 				0480C41028E24EDA00D164D4 /* CellTypes */,
 				0480C41728E25B2500D164D4 /* ModelTemplate */,
 				045750DC28E1F8E500751473 /* TapeModule */,
 				04CBD3D628E286C900F85077 /* ContestModule */,
 				04060D0728E2B8C500FA9684 /* VideoModule */,
 				04060D1128E317FE00FA9684 /* CollaborationModule */,
+				04060D1D28E497C900FA9684 /* PodcastModule */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -278,6 +332,7 @@
 				0480C41828E25D1600D164D4 /* VideoCellType.swift */,
 				04CBD3E228E288FA00F85077 /* ContestCellType.swift */,
 				04060D1B28E3223C00FA9684 /* CollaborationCellType.swift */,
+				04060D2A28E49FB900FA9684 /* PodcastCellType.swift */,
 			);
 			path = CellTypes;
 			sourceTree = "<group>";
@@ -396,6 +451,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04060D2628E4981D00FA9684 /* PodcastModel.swift in Sources */,
+				04060D2928E498BA00FA9684 /* PlayButton.swift in Sources */,
 				0480C40A28E2420700D164D4 /* Section.swift in Sources */,
 				0480C40828E23CCA00D164D4 /* Cell.swift in Sources */,
 				04CBD3E328E288FA00F85077 /* ContestCellType.swift in Sources */,
@@ -408,10 +465,13 @@
 				0480C41628E25ADA00D164D4 /* TapeModel.swift in Sources */,
 				0480C40C28E2422800D164D4 /* SectionType.swift in Sources */,
 				04060D1A28E3186000FA9684 /* CollaborationModel.swift in Sources */,
+				04060D2B28E49FB900FA9684 /* PodcastCellType.swift in Sources */,
 				045750D128E1F5F200751473 /* TabViewContent.swift in Sources */,
 				04CBD3DF28E2872E00F85077 /* ContestModel.swift in Sources */,
 				0480C41228E24F9E00D164D4 /* NewsCellType.swift in Sources */,
+				04060D2228E497FA00FA9684 /* PodcastView.swift in Sources */,
 				0480C41428E25A5D00D164D4 /* TapeCellTypes.swift in Sources */,
+				04060D2428E4980900FA9684 /* PodcastViewModel.swift in Sources */,
 				045750CF28E1F5F200751473 /* WylsacomAppPrototypeApp.swift in Sources */,
 				04060D1C28E3223C00FA9684 /* CollaborationCellType.swift in Sources */,
 				04CBD3DD28E2872100F85077 /* ContestViewModel.swift in Sources */,

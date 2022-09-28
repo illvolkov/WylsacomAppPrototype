@@ -53,6 +53,13 @@ struct TabViewContent: View {
                                         defaultImage: Image("collaboration"),
                                         selectedImage: Image("collaborationSelected"))
                 }.tag(3)
+            PodcastView()
+                .tabItem {
+                    Text("Подкасты")
+                    changeSelectedImage(selection: 4,
+                                        defaultImage: Image("podcast"),
+                                        selectedImage: Image("podcastSelected"))
+                }.tag(4)
         }
         .accentColor(.green)
     }
