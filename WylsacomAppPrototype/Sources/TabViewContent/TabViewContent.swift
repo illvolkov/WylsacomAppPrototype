@@ -46,6 +46,13 @@ struct TabViewContent: View {
                                         defaultImage: Image("video"),
                                         selectedImage: Image("videoSelected"))
                 }.tag(2)
+            CollaborationView()
+                .tabItem {
+                    Text("Годнота")
+                    changeSelectedImage(selection: 3,
+                                        defaultImage: Image("collaboration"),
+                                        selectedImage: Image("collaborationSelected"))
+                }.tag(3)
         }
         .accentColor(.green)
     }

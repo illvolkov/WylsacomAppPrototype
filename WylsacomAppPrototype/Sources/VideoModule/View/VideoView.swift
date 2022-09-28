@@ -14,8 +14,10 @@ struct VideoView: View {
     var body: some View {
         ScrollView {
             NavigationView(title: "Видео")
+                .padding(.bottom, 20)
             ForEach(videoViewModel.video) { cell in
                 VideoCellType(cell: cell)
+                    .padding(.bottom, 10)
             }
         }
     }

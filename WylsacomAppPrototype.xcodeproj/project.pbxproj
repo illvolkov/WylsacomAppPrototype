@@ -11,6 +11,10 @@
 		04060D0C28E2B8EC00FA9684 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D0B28E2B8EC00FA9684 /* VideoView.swift */; };
 		04060D0E28E2B8FA00FA9684 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D0D28E2B8FA00FA9684 /* VideoViewModel.swift */; };
 		04060D1028E2B90600FA9684 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D0F28E2B90500FA9684 /* VideoModel.swift */; };
+		04060D1628E3183F00FA9684 /* CollaborationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D1528E3183F00FA9684 /* CollaborationView.swift */; };
+		04060D1828E3184C00FA9684 /* CollaborationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D1728E3184C00FA9684 /* CollaborationViewModel.swift */; };
+		04060D1A28E3186000FA9684 /* CollaborationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D1928E3186000FA9684 /* CollaborationModel.swift */; };
+		04060D1C28E3223C00FA9684 /* CollaborationCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04060D1B28E3223C00FA9684 /* CollaborationCellType.swift */; };
 		045750CF28E1F5F200751473 /* WylsacomAppPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045750CE28E1F5F200751473 /* WylsacomAppPrototypeApp.swift */; };
 		045750D128E1F5F200751473 /* TabViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045750D028E1F5F200751473 /* TabViewContent.swift */; };
 		045750D328E1F5F400751473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045750D228E1F5F400751473 /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 		04060D0B28E2B8EC00FA9684 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		04060D0D28E2B8FA00FA9684 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 		04060D0F28E2B90500FA9684 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		04060D1528E3183F00FA9684 /* CollaborationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborationView.swift; sourceTree = "<group>"; };
+		04060D1728E3184C00FA9684 /* CollaborationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborationViewModel.swift; sourceTree = "<group>"; };
+		04060D1928E3186000FA9684 /* CollaborationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborationModel.swift; sourceTree = "<group>"; };
+		04060D1B28E3223C00FA9684 /* CollaborationCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborationCellType.swift; sourceTree = "<group>"; };
 		045750CB28E1F5F200751473 /* WylsacomAppPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WylsacomAppPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045750CE28E1F5F200751473 /* WylsacomAppPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WylsacomAppPrototypeApp.swift; sourceTree = "<group>"; };
 		045750D028E1F5F200751473 /* TabViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewContent.swift; sourceTree = "<group>"; };
@@ -110,6 +118,40 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		04060D1128E317FE00FA9684 /* CollaborationModule */ = {
+			isa = PBXGroup;
+			children = (
+				04060D1428E3181500FA9684 /* Model */,
+				04060D1328E3180E00FA9684 /* ViewModel */,
+				04060D1228E3180A00FA9684 /* View */,
+			);
+			path = CollaborationModule;
+			sourceTree = "<group>";
+		};
+		04060D1228E3180A00FA9684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04060D1528E3183F00FA9684 /* CollaborationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04060D1328E3180E00FA9684 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04060D1728E3184C00FA9684 /* CollaborationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04060D1428E3181500FA9684 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04060D1928E3186000FA9684 /* CollaborationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		045750C228E1F5F200751473 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +207,7 @@
 				045750DC28E1F8E500751473 /* TapeModule */,
 				04CBD3D628E286C900F85077 /* ContestModule */,
 				04060D0728E2B8C500FA9684 /* VideoModule */,
+				04060D1128E317FE00FA9684 /* CollaborationModule */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -234,6 +277,7 @@
 				0480C41128E24F9E00D164D4 /* NewsCellType.swift */,
 				0480C41828E25D1600D164D4 /* VideoCellType.swift */,
 				04CBD3E228E288FA00F85077 /* ContestCellType.swift */,
+				04060D1B28E3223C00FA9684 /* CollaborationCellType.swift */,
 			);
 			path = CellTypes;
 			sourceTree = "<group>";
@@ -363,14 +407,18 @@
 				04060D0E28E2B8FA00FA9684 /* VideoViewModel.swift in Sources */,
 				0480C41628E25ADA00D164D4 /* TapeModel.swift in Sources */,
 				0480C40C28E2422800D164D4 /* SectionType.swift in Sources */,
+				04060D1A28E3186000FA9684 /* CollaborationModel.swift in Sources */,
 				045750D128E1F5F200751473 /* TabViewContent.swift in Sources */,
 				04CBD3DF28E2872E00F85077 /* ContestModel.swift in Sources */,
 				0480C41228E24F9E00D164D4 /* NewsCellType.swift in Sources */,
 				0480C41428E25A5D00D164D4 /* TapeCellTypes.swift in Sources */,
 				045750CF28E1F5F200751473 /* WylsacomAppPrototypeApp.swift in Sources */,
+				04060D1C28E3223C00FA9684 /* CollaborationCellType.swift in Sources */,
 				04CBD3DD28E2872100F85077 /* ContestViewModel.swift in Sources */,
 				04060D0628E2B63000FA9684 /* View + Extension.swift in Sources */,
 				04CBD3DB28E2870D00F85077 /* ContestView.swift in Sources */,
+				04060D1628E3183F00FA9684 /* CollaborationView.swift in Sources */,
+				04060D1828E3184C00FA9684 /* CollaborationViewModel.swift in Sources */,
 				0480C3FE28E2050C00D164D4 /* TapeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,6 +19,7 @@ struct VideoCellType: View {
                 Image(cell.image)
                     .resizable()
                     .frame(height: viewWidth * 0.53)
+                    .cornerRadius(10, corners: [.topLeft, .topRight])
                 Button {} label: {
                     ZStack {
                         Circle()
@@ -51,13 +52,22 @@ struct VideoCellType: View {
                         .opacity(0.8)
                 }
             }
-            .padding([.leading, .trailing], 20)
+            .padding([.leading, .trailing], 40)
             .frame(width: viewWidth, alignment: .leading)
             Spacer()
         }
-        .cornerRadius(15)
         .padding([.leading, .trailing], 20)
         .frame(width: viewWidth, height: viewWidth * 0.95)
+        .background(
+            Rectangle()
+                .fill(.white)
+                .cornerRadius(10)
+                .padding([.leading, .trailing], 20)
+                .shadow(color: .init(uiColor: UIColor.systemGray6),
+                        radius: 15,
+                        x: 0,
+                        y: 15)
+        )
     }
 }
 
