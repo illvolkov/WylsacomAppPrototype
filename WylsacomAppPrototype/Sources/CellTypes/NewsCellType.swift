@@ -43,6 +43,10 @@ struct NewsCellType: View {
         .cornerRadius(15)
         .padding([.leading, .trailing], 20)
         .frame(width: viewWidth, height: viewWidth)
+        .shadow(color: .init(uiColor: UIColor.systemGray6),
+                radius: 15,
+                x: 0,
+                y: 15)
     }
 }
 
