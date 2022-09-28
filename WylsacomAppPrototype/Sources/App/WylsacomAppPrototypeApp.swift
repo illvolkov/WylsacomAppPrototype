@@ -11,7 +11,7 @@ import SwiftUI
 struct WylsacomAppPrototypeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabViewContent()
         }
     }
 }
